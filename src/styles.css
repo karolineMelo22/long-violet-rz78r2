@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App.claro {
+  background-color: #eeeaeee3;
+  color: #140404e8;
+}
+
+.App.escuro {
+  background-color: #080303;
+  color: #dfdfdfc9;
+}
+
+.conteudo {
+  padding: 40px 20px 20px;
+}
+
+.botoes button {
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: #380e3ae7;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.botoes button:hover {
+  background-color: #801f9e8f;
+}
+
+.resultados {
+  margin-top: 30px;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.opcao-resultado {
+  margin-bottom: 20px;
+}
+
+.barra {
+  height: 20px;
+  background-color: #613675a9;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.preenchimento {
+  height: 100%;
+  background-color: #160218;
+  transition: width 0.3s ease;
+}
+
+.seletor-tema {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.bloco-tema {
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  user-select: none;
+  font-size: 16px;
+  min-width: 140px;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.bloco-tema.claro {
+  background-color: #fff;
+  color: #000;
+  border-color: #ccc;
+}
+
+.bloco-tema.escuro {
+  background-color: #000000;
+  color: #fff;
+  border-color: #8b2f2f;
+}
+
+.bloco-tema.ativo {
+  border-color: #580958a8;
+  box-shadow: 0 0 10px #20021f;
+}
